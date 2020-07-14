@@ -1,14 +1,23 @@
 .checkout {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
 }
 
 .checkout__ad {
   object-fit: contain;
   width: 100%;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  z-index: -1;
-  margin-bottom: -100px;
+  z-index: 100;
+  margin-bottom: 20px;
 }
 
 .checkout__items {
   display: flex;
+  flex-direction: column;
+}
+
+.checkout__basketMessage {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
 }
